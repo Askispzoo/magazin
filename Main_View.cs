@@ -28,5 +28,11 @@ namespace magazin
             Form sprzet_view = new Sprzet();
             sprzet_view.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form ustawienia_view = new Ustawienia();
+            ustawienia_view.Show();
+        }
     }
 }

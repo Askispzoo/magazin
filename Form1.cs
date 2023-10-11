@@ -19,11 +19,6 @@ namespace magazin
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (logintextBox.Text == "aski" && password_textBox.Text == "Aski2023!")
@@ -35,11 +30,11 @@ namespace magazin
             {
                 MessageBox.Show("Nieprawidłowe dane logowania!", "Błąd!", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
 
-                
+
 
             }
-                Form logowanie = new Form1();
-                logowanie.Visible = false;
+            Form logowanie = new Form1();
+            logowanie.Visible = false;
         }
     }
 }
