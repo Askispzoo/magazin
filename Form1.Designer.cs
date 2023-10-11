@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            logintextBox = new TextBox();
+            password_textBox = new TextBox();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -46,22 +47,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // textBox1
+            // logintextBox
             // 
-            textBox1.Location = new Point(439, 237);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Nazwa użytkownika";
-            textBox1.Size = new Size(343, 47);
-            textBox1.TabIndex = 1;
+            logintextBox.Location = new Point(439, 237);
+            logintextBox.Name = "logintextBox";
+            logintextBox.PlaceholderText = "Nazwa użytkownika";
+            logintextBox.Size = new Size(343, 47);
+            logintextBox.TabIndex = 1;
             // 
-            // textBox2
+            // password_textBox
             // 
-            textBox2.Location = new Point(439, 311);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Hasło";
-            textBox2.Size = new Size(343, 47);
-            textBox2.TabIndex = 2;
-            textBox2.UseSystemPasswordChar = true;
+            password_textBox.Location = new Point(439, 311);
+            password_textBox.Name = "password_textBox";
+            password_textBox.PlaceholderText = "Hasło";
+            password_textBox.Size = new Size(343, 47);
+            password_textBox.TabIndex = 2;
+            password_textBox.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
@@ -74,14 +75,24 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(1117, 476);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 41);
+            label1.TabIndex = 4;
+            label1.Text = "v 1.0";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1208, 526);
+            Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(password_textBox);
+            Controls.Add(logintextBox);
             Controls.Add(button1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -94,9 +105,10 @@
         #endregion
 
         private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private PictureBox pictureBox1;
+        private Label label1;
+        public TextBox logintextBox;
+        public TextBox password_textBox;
     }
 }
 

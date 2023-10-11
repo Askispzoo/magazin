@@ -62,6 +62,7 @@
             button2.Size = new Size(923, 320);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 

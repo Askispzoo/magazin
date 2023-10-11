@@ -22,5 +22,11 @@ namespace magazin
             Form pracownicy_view = new Pracownicy();
             pracownicy_view.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form sprzet_view = new Sprzet();
+            sprzet_view.Show();
+        }
     }
 }
