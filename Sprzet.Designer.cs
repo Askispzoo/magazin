@@ -127,7 +127,7 @@
             Controls.Add(gridRecordNavigationControl1);
             Name = "Sprzet";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = " ";
+            Text = " ASKI MAGAZYN - Narzędzia";
             Load += Sprzet_Load;
             ResumeLayout(false);
         }

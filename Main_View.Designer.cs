@@ -30,9 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_View));
-            popupMenu1 = new Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu(components);
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -46,9 +44,10 @@
             // 
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(12, 25);
+            button1.Location = new Point(13, 25);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(923, 320);
+            button1.Size = new Size(922, 320);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -58,8 +57,9 @@
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.Location = new Point(960, 25);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(923, 320);
+            button2.Size = new Size(922, 320);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
@@ -69,8 +69,9 @@
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.Location = new Point(1900, 25);
+            button3.Margin = new Padding(2, 2, 2, 2);
             button3.Name = "button3";
-            button3.Size = new Size(923, 320);
+            button3.Size = new Size(922, 320);
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
@@ -81,8 +82,9 @@
             button4.BackgroundImageLayout = ImageLayout.Stretch;
             button4.Enabled = false;
             button4.Location = new Point(1900, 1019);
+            button4.Margin = new Padding(2, 2, 2, 2);
             button4.Name = "button4";
-            button4.Size = new Size(923, 320);
+            button4.Size = new Size(922, 320);
             button4.TabIndex = 3;
             button4.UseVisualStyleBackColor = true;
             // 
@@ -90,7 +92,8 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(12, 1148);
+            pictureBox1.Location = new Point(13, 1148);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(929, 191);
             pictureBox1.TabIndex = 4;
@@ -100,9 +103,10 @@
             // 
             button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.BackgroundImageLayout = ImageLayout.Stretch;
-            button5.Location = new Point(12, 384);
+            button5.Location = new Point(13, 383);
+            button5.Margin = new Padding(2, 2, 2, 2);
             button5.Name = "button5";
-            button5.Size = new Size(923, 320);
+            button5.Size = new Size(922, 320);
             button5.TabIndex = 5;
             button5.UseVisualStyleBackColor = true;
             // 
@@ -110,13 +114,14 @@
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2846, 1351);
+            ClientSize = new Size(2847, 1357);
             Controls.Add(button5);
             Controls.Add(pictureBox1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Main_View";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ASKI MAGAZYN";
@@ -126,7 +131,6 @@
         }
 
         #endregion
-        private Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu popupMenu1;
         private Button button1;
         private Button button2;
         private Button button3;
