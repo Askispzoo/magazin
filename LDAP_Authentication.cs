@@ -10,7 +10,7 @@ namespace magazin
     internal class LDAP_Authentication : Form1
     {
         TextBox logintextBox = new TextBox();
-        
+        public string userName = logintextBox.Text();
 
     /*
              public partial class LoginForm : Form
