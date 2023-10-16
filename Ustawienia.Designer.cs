@@ -33,6 +33,10 @@
             radioButton2 = new RadioButton();
             comboBox1 = new ComboBox();
             label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // listBox1
@@ -83,11 +87,52 @@
             label1.TabIndex = 4;
             label1.Text = "label1";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(1482, 25);
+            label2.Name = "label2";
+            label2.Size = new Size(260, 41);
+            label2.TabIndex = 5;
+            label2.Text = "Dane użytkownika";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(1482, 125);
+            label3.Name = "label3";
+            label3.Size = new Size(85, 41);
+            label3.TabIndex = 6;
+            label3.Text = "login";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(1482, 192);
+            label4.Name = "label4";
+            label4.Size = new Size(265, 41);
+            label4.TabIndex = 7;
+            label4.Text = "pelna nazwa konta";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(1482, 257);
+            label5.Name = "label5";
+            label5.Size = new Size(97, 41);
+            label5.TabIndex = 8;
+            label5.Text = "label5";
+            // 
             // Ustawienia
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(comboBox1);
             Controls.Add(radioButton2);
@@ -96,6 +141,7 @@
             Name = "Ustawienia";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ustawienia";
+            Load += Ustawienia_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -107,5 +153,9 @@
         private RadioButton radioButton2;
         private ComboBox comboBox1;
         private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }
