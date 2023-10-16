@@ -34,5 +34,11 @@ namespace magazin
             Form ustawienia_view = new Ustawienia();
             ustawienia_view.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form samochody_view = new Samochody();
+            samochody_view.Show();
+        }
     }
 }

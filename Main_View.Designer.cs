@@ -45,7 +45,7 @@
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Location = new Point(13, 25);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(922, 320);
             button1.TabIndex = 0;
@@ -57,7 +57,7 @@
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.Location = new Point(960, 25);
-            button2.Margin = new Padding(2, 2, 2, 2);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(922, 320);
             button2.TabIndex = 1;
@@ -69,7 +69,7 @@
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.Location = new Point(1900, 25);
-            button3.Margin = new Padding(2, 2, 2, 2);
+            button3.Margin = new Padding(2);
             button3.Name = "button3";
             button3.Size = new Size(922, 320);
             button3.TabIndex = 2;
@@ -82,7 +82,7 @@
             button4.BackgroundImageLayout = ImageLayout.Stretch;
             button4.Enabled = false;
             button4.Location = new Point(1900, 1019);
-            button4.Margin = new Padding(2, 2, 2, 2);
+            button4.Margin = new Padding(2);
             button4.Name = "button4";
             button4.Size = new Size(922, 320);
             button4.TabIndex = 3;
@@ -93,7 +93,7 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(13, 1148);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(929, 191);
             pictureBox1.TabIndex = 4;
@@ -104,11 +104,12 @@
             button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.BackgroundImageLayout = ImageLayout.Stretch;
             button5.Location = new Point(13, 383);
-            button5.Margin = new Padding(2, 2, 2, 2);
+            button5.Margin = new Padding(2);
             button5.Name = "button5";
             button5.Size = new Size(922, 320);
             button5.TabIndex = 5;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Main_View
             // 
@@ -121,7 +122,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Main_View";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ASKI MAGAZYN";

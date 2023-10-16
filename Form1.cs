@@ -25,65 +25,69 @@ namespace magazin
         {
             string username = logintextBox.Text;
             string password = password_textBox.Text;
-            string ldapPath = "LDAP://serwer_ldap_aski_kaski"; //Trzeba podac adres serwera do LDAP
+            string ldapPath = "LDAP://192.168.108.10"; //Trzeba podac adres serwera do LDAP
 
             if (AuthenticateUser(username, password, ldapPath))
             {
                 MessageBox.Show("Zalogowano pomyślnie!");
-            } else
+                Form main_view = new Main_View();
+                main_view.Show();
+
+            }
+            else
             {
                 MessageBox.Show("Wprowadzono błędne dane logowania!");
             }
 
 
 
-        /*
-             public partial class LoginForm : Form
-    {
-        public LoginForm()
+            /*
+                 public partial class LoginForm : Form
         {
-            InitializeComponent();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
-            string ldapPath = "LDAP://your_ldap_server_address"; // Replace with your LDAP server address
-
-            if (IsAuthenticated(ldapPath, username, password))
+            public LoginForm()
             {
-                MessageBox.Show("Authentication successful!");
-                // You can add code here to open your main application form or perform other actions.
+                InitializeComponent();
             }
-            else
-            {
-                MessageBox.Show("Authentication failed. Please check your credentials.");
-            }
-        }
 
-        private bool IsAuthenticated(string ldapPath, string username, string password)
-        {
-            try
+            private void btnLogin_Click(object sender, EventArgs e)
             {
-                using (DirectoryEntry entry = new DirectoryEntry(ldapPath, username, password))
+                string username = txtUsername.Text;
+                string password = txtPassword.Text;
+                string ldapPath = "LDAP://your_ldap_server_address"; // Replace with your LDAP server address
+
+                if (IsAuthenticated(ldapPath, username, password))
                 {
-                    using (DirectorySearcher searcher = new DirectorySearcher(entry))
-                    {
-                        searcher.Filter = "(sAMAccountName=" + username + ")";
-                        SearchResult result = searcher.FindOne();
-                        return (result != null);
-                    }
+                    MessageBox.Show("Authentication successful!");
+                    // You can add code here to open your main application form or perform other actions.
+                }
+                else
+                {
+                    MessageBox.Show("Authentication failed. Please check your credentials.");
                 }
             }
-            catch (Exception)
+
+            private bool IsAuthenticated(string ldapPath, string username, string password)
             {
-                return false;
+                try
+                {
+                    using (DirectoryEntry entry = new DirectoryEntry(ldapPath, username, password))
+                    {
+                        using (DirectorySearcher searcher = new DirectorySearcher(entry))
+                        {
+                            searcher.Filter = "(sAMAccountName=" + username + ")";
+                            SearchResult result = searcher.FindOne();
+                            return (result != null);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
             }
         }
-    }
-             */
-    }
+                 */
+        }
 
         private static bool AuthenticateUser(string username, string password, string ldapPath)
         {
@@ -114,7 +118,6 @@ namespace magazin
                 }
             }
 
-
             /* IMITACJA LOGOWANIA
             if (logintextBox.Text == "aski" && password_textBox.Text == "Aski2023!")
             {
@@ -133,4 +136,11 @@ namespace magazin
 
             */
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+}
+
