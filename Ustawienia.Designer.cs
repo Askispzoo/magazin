@@ -120,9 +120,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(1482, 257);
             label5.Name = "label5";
-            label5.Size = new Size(97, 41);
+            label5.Size = new Size(229, 41);
             label5.TabIndex = 8;
-            label5.Text = "label5";
+            label5.Text = "systemdirectory";
             // 
             // Ustawienia
             // 
