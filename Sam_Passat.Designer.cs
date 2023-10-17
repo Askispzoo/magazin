@@ -53,9 +53,9 @@
             label1.Font = new Font("Segoe UI", 14.1F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(29, 46);
             label1.Name = "label1";
-            label1.Size = new Size(775, 62);
+            label1.Size = new Size(993, 62);
             label1.TabIndex = 0;
-            label1.Text = "Volkswagen Passat Variant B7 1.6 #1";
+            label1.Text = "Volkswagen Passat Variant B7 1.6 - (CW 86421)";
             // 
             // pictureBox1
             // 
@@ -209,7 +209,8 @@
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Name = "Sam_Passat";
-            Text = "Sam_Passat";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Volkswagen Passat Variant (B7) 1.6 - (CW 86421)";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

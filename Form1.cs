@@ -11,6 +11,7 @@ using System.DirectoryServices.Protocols;
 using System.Windows.Forms;
 using System.DirectoryServices;
 using System.Linq.Expressions;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace magazin
 {
@@ -140,6 +141,28 @@ namespace magazin
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            string username = logintextBox.Text;
+            string password = password_textBox.Text;
+            string ldapPath = "LDAP://192.168.108.10"; //Trzeba podac adres serwera do LDAP
+            if (e.KeyCode == Keys.Enter)
+            {
+
+                if (AuthenticateUser(username, password, ldapPath))
+                {
+                    MessageBox.Show("Zalogowano pomyślnie!");
+                    Form main_view = new Main_View();
+                    main_view.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Wprowadzono błędne dane logowania!");
+                }
+            }
         }
     }
 }
