@@ -56,5 +56,23 @@ namespace magazin
             Form sam_add_view = new Sam_Add();
             sam_add_view.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form boxer_view = new Sam_Boxer();
+            boxer_view.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form peugeotsw_view = new Sam_407sw();
+            peugeotsw_view.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form peugeotswsilver_view = new _307sw();
+            peugeotswsilver_view.Show();
+        }
     }
 }

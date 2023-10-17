@@ -30,8 +30,9 @@
         {
             gridRecordNavigationControl1 = new Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl();
             button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
+            button2 = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // gridRecordNavigationControl1
@@ -98,15 +99,6 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.Location = new Point(241, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(188, 86);
-            button2.TabIndex = 2;
-            button2.Text = "Odzież robocza";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             button3.Location = new Point(448, 12);
@@ -116,27 +108,48 @@
             button3.Text = "Urządzenia bezpieczeństwa";
             button3.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.Location = new Point(231, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(188, 86);
+            button2.TabIndex = 2;
+            button2.Text = "Odzież";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(1313, 51);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Wyszukaj...";
+            textBox1.Size = new Size(563, 47);
+            textBox1.TabIndex = 4;
+            // 
             // Sprzet
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
-            Controls.Add(button3);
+            Controls.Add(textBox1);
             Controls.Add(button2);
+            Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(gridRecordNavigationControl1);
             Name = "Sprzet";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = " ASKI MAGAZYN - Narzędzia";
+            Text = "ASKI MAGAZYN - Sprzęt";
             Load += Sprzet_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl gridRecordNavigationControl1;
         private Button button1;
-        private Button button2;
         private Button button3;
+        private Button button2;
+        private TextBox textBox1;
     }
 }

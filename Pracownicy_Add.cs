@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace magazin
 {
-    public partial class Pracownicy : Form
+    public partial class Pracownicy_Add : Form
     {
-        public Pracownicy()
+        public Pracownicy_Add()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            Form pracownicy_add_view = new Pracownicy_Add();
-            pracownicy_add_view.Show();
+
         }
     }
 }

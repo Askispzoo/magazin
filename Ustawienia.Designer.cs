@@ -33,10 +33,15 @@
             radioButton2 = new RadioButton();
             comboBox1 = new ComboBox();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            textBox1 = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            groupBox1 = new GroupBox();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // listBox1
@@ -87,19 +92,10 @@
             label1.TabIndex = 4;
             label1.Text = "Wybierz motyw aplikacji:";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1482, 25);
-            label2.Name = "label2";
-            label2.Size = new Size(260, 41);
-            label2.TabIndex = 5;
-            label2.Text = "Dane użytkownika";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(1482, 125);
+            label3.Location = new Point(15, 63);
             label3.Name = "label3";
             label3.Size = new Size(85, 41);
             label3.TabIndex = 6;
@@ -109,7 +105,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(1482, 192);
+            label4.Location = new Point(15, 130);
             label4.Name = "label4";
             label4.Size = new Size(265, 41);
             label4.TabIndex = 7;
@@ -118,21 +114,69 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(1482, 257);
+            label5.Location = new Point(15, 195);
             label5.Name = "label5";
             label5.Size = new Size(229, 41);
             label5.TabIndex = 8;
             label5.Text = "systemdirectory";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(10, 609);
+            label6.Name = "label6";
+            label6.Size = new Size(266, 41);
+            label6.TabIndex = 9;
+            label6.Text = "Serwer aktualizacji:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(10, 653);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "https://";
+            textBox1.Size = new Size(302, 47);
+            textBox1.TabIndex = 10;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 303);
+            label7.Name = "label7";
+            label7.Size = new Size(242, 41);
+            label7.TabIndex = 11;
+            label7.Text = "Jakieś tam opcje:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(10, 25);
+            label8.Name = "label8";
+            label8.Size = new Size(338, 41);
+            label8.TabIndex = 12;
+            label8.Text = "Jakieś tam opcje znowu:";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Location = new Point(1376, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(500, 305);
+            groupBox1.TabIndex = 13;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Dane użytkownika";
             // 
             // Ustawienia
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(groupBox1);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(textBox1);
+            Controls.Add(label6);
             Controls.Add(label1);
             Controls.Add(comboBox1);
             Controls.Add(radioButton2);
@@ -142,6 +186,8 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ustawienia";
             Load += Ustawienia_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,9 +199,13 @@
         private RadioButton radioButton2;
         private ComboBox comboBox1;
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
+        private TextBox textBox1;
+        private Label label7;
+        private Label label8;
+        private GroupBox groupBox1;
     }
 }

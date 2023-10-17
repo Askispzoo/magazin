@@ -1,6 +1,6 @@
 ﻿namespace magazin
 {
-    partial class Sam_Boxer
+    partial class Sam_407sw
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sam_Boxer));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sam_407sw));
             label14 = new Label();
             label13 = new Label();
             label12 = new Label();
@@ -53,8 +53,8 @@
             label14.Location = new Point(237, 886);
             label14.Name = "label14";
             label14.Size = new Size(123, 41);
-            label14.TabIndex = 74;
-            label14.Text = "1910 kg";
+            label14.TabIndex = 29;
+            label14.Text = "1520 kg";
             // 
             // label13
             // 
@@ -62,8 +62,8 @@
             label13.Location = new Point(144, 707);
             label13.Name = "label13";
             label13.Size = new Size(291, 41);
-            label13.TabIndex = 73;
-            label13.Text = "2300cm3, typ: Diesel";
+            label13.TabIndex = 28;
+            label13.Text = "1600cm3, typ: Diesel";
             // 
             // label12
             // 
@@ -71,7 +71,7 @@
             label12.Location = new Point(194, 768);
             label12.Name = "label12";
             label12.Size = new Size(203, 41);
-            label12.TabIndex = 72;
+            label12.TabIndex = 27;
             label12.Text = "ASKI sp. z.o.o.";
             // 
             // label11
@@ -80,19 +80,19 @@
             label11.Location = new Point(264, 827);
             label11.Name = "label11";
             label11.Size = new Size(153, 41);
-            label11.TabIndex = 71;
-            label11.Text = "CW 72456";
+            label11.TabIndex = 26;
+            label11.Text = "CW 52062";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 14.1F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = Color.Lime;
+            label10.ForeColor = Color.Red;
             label10.Location = new Point(1134, 845);
             label10.Name = "label10";
             label10.Size = new Size(156, 62);
-            label10.TabIndex = 70;
-            label10.Text = "40 dni";
+            label10.TabIndex = 25;
+            label10.Text = "10 dni";
             // 
             // label9
             // 
@@ -101,7 +101,7 @@
             label9.Location = new Point(1134, 783);
             label9.Name = "label9";
             label9.Size = new Size(711, 62);
-            label9.TabIndex = 69;
+            label9.TabIndex = 24;
             label9.Text = "Następne badanie techniczne za:";
             // 
             // label8
@@ -110,7 +110,7 @@
             label8.Location = new Point(1144, 707);
             label8.Name = "label8";
             label8.Size = new Size(262, 41);
-            label8.TabIndex = 68;
+            label8.TabIndex = 23;
             label8.Text = "Kacper Dudkowski";
             // 
             // label7
@@ -120,7 +120,7 @@
             label7.Location = new Point(1134, 621);
             label7.Name = "label7";
             label7.Size = new Size(432, 62);
-            label7.TabIndex = 67;
+            label7.TabIndex = 22;
             label7.Text = "Ostatni użytkownik:";
             // 
             // label6
@@ -129,7 +129,7 @@
             label6.Location = new Point(21, 827);
             label6.Name = "label6";
             label6.Size = new Size(237, 41);
-            label6.TabIndex = 66;
+            label6.TabIndex = 21;
             label6.Text = "Nr. rejestracyjny:";
             // 
             // label5
@@ -138,7 +138,7 @@
             label5.Location = new Point(21, 886);
             label5.Name = "label5";
             label5.Size = new Size(210, 41);
-            label5.TabIndex = 65;
+            label5.TabIndex = 20;
             label5.Text = "Masa pojazdu:";
             // 
             // label4
@@ -147,7 +147,7 @@
             label4.Location = new Point(21, 768);
             label4.Name = "label4";
             label4.Size = new Size(154, 41);
-            label4.TabIndex = 64;
+            label4.TabIndex = 19;
             label4.Text = "Właściciel:";
             // 
             // label3
@@ -156,7 +156,7 @@
             label3.Location = new Point(21, 707);
             label3.Name = "label3";
             label3.Size = new Size(94, 41);
-            label3.TabIndex = 63;
+            label3.TabIndex = 18;
             label3.Text = "Silnik:";
             // 
             // label2
@@ -166,7 +166,7 @@
             label2.Location = new Point(21, 621);
             label2.Name = "label2";
             label2.Size = new Size(326, 62);
-            label2.TabIndex = 62;
+            label2.TabIndex = 17;
             label2.Text = "Dane pojazdu:";
             // 
             // pictureBox1
@@ -175,7 +175,7 @@
             pictureBox1.Location = new Point(21, 131);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1847, 471);
-            pictureBox1.TabIndex = 61;
+            pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
             // label1
@@ -184,11 +184,11 @@
             label1.Font = new Font("Segoe UI", 14.1F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(21, 66);
             label1.Name = "label1";
-            label1.Size = new Size(587, 62);
-            label1.TabIndex = 60;
-            label1.Text = "Peugeot Boxer - CW 72456";
+            label1.Size = new Size(357, 62);
+            label1.TabIndex = 15;
+            label1.Text = "Peugeot 407SW";
             // 
-            // Sam_Boxer
+            // Sam_407sw
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -208,9 +208,9 @@
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Name = "Sam_Boxer";
+            Name = "Sam_407sw";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Peugeot Boxer";
+            Text = "Peugeot 407SW";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

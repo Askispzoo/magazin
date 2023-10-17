@@ -27,5 +27,11 @@ namespace magazin
             Form tools_view = new Tools();
             tools_view.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form uniforms_view = new Uniforms();
+            uniforms_view.Show();
+        }
     }
 }

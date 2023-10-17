@@ -140,7 +140,8 @@ namespace magazin
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Form main_view = new Main_View();
+            main_view.Show();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)

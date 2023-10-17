@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace magazin
 {
-    public partial class Pracownicy : Form
+    public partial class _307sw : Form
     {
-        public Pracownicy()
+        public _307sw()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form pracownicy_add_view = new Pracownicy_Add();
-            pracownicy_add_view.Show();
         }
     }
 }

@@ -40,6 +40,7 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            textBox1 = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -175,6 +176,7 @@
             button1.TabIndex = 2;
             button1.Text = "Dodaj";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -198,11 +200,20 @@
             button3.Text = "Edytuj";
             button3.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(845, 79);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Wyszukaj...";
+            textBox1.Size = new Size(563, 47);
+            textBox1.TabIndex = 5;
+            // 
             // Pracownicy
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
+            Controls.Add(textBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -214,6 +225,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -229,5 +241,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private TextBox textBox1;
     }
 }

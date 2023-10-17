@@ -38,9 +38,11 @@
             button4 = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            button9 = new Button();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
             button8 = new Button();
+            button10 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -138,6 +140,8 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(button10);
+            tabPage1.Controls.Add(button9);
             tabPage1.Controls.Add(button5);
             tabPage1.Controls.Add(button4);
             tabPage1.Location = new Point(10, 58);
@@ -147,6 +151,17 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Osobowe";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
+            button9.BackgroundImageLayout = ImageLayout.Stretch;
+            button9.Location = new Point(923, 6);
+            button9.Name = "button9";
+            button9.Size = new Size(448, 193);
+            button9.TabIndex = 2;
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // tabPage2
             // 
@@ -179,6 +194,18 @@
             button8.Size = new Size(448, 193);
             button8.TabIndex = 4;
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button10
+            // 
+            button10.BackgroundImage = (Image)resources.GetObject("button10.BackgroundImage");
+            button10.BackgroundImageLayout = ImageLayout.Stretch;
+            button10.Location = new Point(6, 205);
+            button10.Name = "button10";
+            button10.Size = new Size(457, 193);
+            button10.TabIndex = 3;
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // Samochody
             // 
@@ -213,5 +240,7 @@
         private TabPage tabPage2;
         private TabPage tabPage3;
         private Button button8;
+        private Button button9;
+        private Button button10;
     }
 }

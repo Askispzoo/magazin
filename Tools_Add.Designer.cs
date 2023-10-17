@@ -209,8 +209,9 @@
             // 
             // Tools_Add
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(240F, 240F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScroll = true;
             ClientSize = new Size(1228, 1262);
             Controls.Add(textBox4);
             Controls.Add(label7);

@@ -1,6 +1,6 @@
 ﻿namespace magazin
 {
-    partial class Tools
+    partial class Uniforms
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tools));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uniforms));
+            textBox1 = new TextBox();
+            dataGridView1 = new DataGridView();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            dataGridView1 = new DataGridView();
-            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(1302, 23);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Wyszukaj...";
+            textBox1.Size = new Size(563, 47);
+            textBox1.TabIndex = 13;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 94);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 102;
+            dataGridView1.RowTemplate.Height = 49;
+            dataGridView1.Size = new Size(1864, 886);
+            dataGridView1.TabIndex = 12;
             // 
             // button3
             // 
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(457, 32);
+            button3.Location = new Point(446, 12);
             button3.Name = "button3";
             button3.Size = new Size(188, 58);
-            button3.TabIndex = 6;
+            button3.TabIndex = 11;
             button3.Text = "Usuń";
             button3.UseVisualStyleBackColor = true;
             // 
@@ -52,10 +70,10 @@
             // 
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(240, 32);
+            button2.Location = new Point(229, 12);
             button2.Name = "button2";
             button2.Size = new Size(188, 58);
-            button2.TabIndex = 5;
+            button2.TabIndex = 10;
             button2.Text = "Edytuj";
             button2.UseVisualStyleBackColor = true;
             // 
@@ -63,33 +81,14 @@
             // 
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(23, 32);
+            button1.Location = new Point(12, 12);
             button1.Name = "button1";
             button1.Size = new Size(188, 58);
-            button1.TabIndex = 4;
+            button1.TabIndex = 9;
             button1.Text = "Dodaj";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(23, 114);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 102;
-            dataGridView1.RowTemplate.Height = 49;
-            dataGridView1.Size = new Size(1853, 866);
-            dataGridView1.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(1313, 43);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Wyszukaj...";
-            textBox1.Size = new Size(563, 47);
-            textBox1.TabIndex = 8;
-            // 
-            // Tools
+            // Uniforms
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,8 +98,9 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Tools";
-            Text = "Sprzęt - Narzędzia";
+            Name = "Uniforms";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Odzież robocza";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -108,10 +108,10 @@
 
         #endregion
 
+        private TextBox textBox1;
+        private DataGridView dataGridView1;
         private Button button3;
         private Button button2;
         private Button button1;
-        private DataGridView dataGridView1;
-        private TextBox textBox1;
     }
 }
