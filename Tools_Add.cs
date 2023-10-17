@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace magazin
 {
-    public partial class Sprzet : Form
+    public partial class Tools_Add : Form
     {
-        public Sprzet()
+        public Tools_Add()
         {
             InitializeComponent();
         }
 
-        private void Sprzet_Load(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form tools_view = new Tools();
-            tools_view.Show();
         }
     }
 }

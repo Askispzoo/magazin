@@ -45,6 +45,9 @@
             label8 = new Label();
             button1 = new Button();
             pictureBox2 = new PictureBox();
+            openFileDialog1 = new OpenFileDialog();
+            label9 = new Label();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -189,11 +192,39 @@
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.ForeColor = Color.Red;
+            label9.Location = new Point(158, 29);
+            label9.Name = "label9";
+            label9.Size = new Size(604, 41);
+            label9.TabIndex = 16;
+            label9.Text = "Do dodania funkcjonalność openFileDialogu";
+            // 
+            // button2
+            // 
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(359, 1213);
+            button2.Name = "button2";
+            button2.Size = new Size(372, 114);
+            button2.TabIndex = 17;
+            button2.Text = "Dodaj";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // Sam_Add
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1168, 1172);
+            AutoScroll = true;
+            ClientSize = new Size(1168, 1433);
+            Controls.Add(button2);
+            Controls.Add(label9);
             Controls.Add(pictureBox2);
             Controls.Add(button1);
             Controls.Add(label8);
@@ -238,5 +269,8 @@
         private Label label8;
         private Button button1;
         private PictureBox pictureBox2;
+        private OpenFileDialog openFileDialog1;
+        private Label label9;
+        private Button button2;
     }
 }
