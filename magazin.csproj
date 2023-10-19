@@ -18,6 +18,8 @@
 
   <ItemGroup>
 
+<PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+
 <PackageReference Include="Syncfusion.Core.WinForms" Version="23.1.36" />
 
 <PackageReference Include="Syncfusion.Shared.Base" Version="23.1.36" />

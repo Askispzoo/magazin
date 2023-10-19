@@ -30,13 +30,17 @@
         {
             dataGridView1 = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
+            Imie = new DataGridViewTextBoxColumn();
+            Nazwisko = new DataGridViewTextBoxColumn();
+            Wiek = new DataGridViewTextBoxColumn();
+            Stanowisko = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Imie, Nazwisko, Wiek, Stanowisko });
             dataGridView1.Location = new Point(12, 107);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 102;
@@ -51,6 +55,34 @@
             ID.Name = "ID";
             ID.ReadOnly = true;
             ID.Width = 250;
+            // 
+            // Imie
+            // 
+            Imie.HeaderText = "Imię";
+            Imie.MinimumWidth = 12;
+            Imie.Name = "Imie";
+            Imie.Width = 250;
+            // 
+            // Nazwisko
+            // 
+            Nazwisko.HeaderText = "Nazwisko";
+            Nazwisko.MinimumWidth = 12;
+            Nazwisko.Name = "Nazwisko";
+            Nazwisko.Width = 250;
+            // 
+            // Wiek
+            // 
+            Wiek.HeaderText = "Wiek";
+            Wiek.MinimumWidth = 12;
+            Wiek.Name = "Wiek";
+            Wiek.Width = 250;
+            // 
+            // Stanowisko
+            // 
+            Stanowisko.HeaderText = "Stanowisko";
+            Stanowisko.MinimumWidth = 12;
+            Stanowisko.Name = "Stanowisko";
+            Stanowisko.Width = 250;
             // 
             // Srodki_Trwale
             // 
@@ -69,5 +101,9 @@
 
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Imie;
+        private DataGridViewTextBoxColumn Nazwisko;
+        private DataGridViewTextBoxColumn Wiek;
+        private DataGridViewTextBoxColumn Stanowisko;
     }
 }
