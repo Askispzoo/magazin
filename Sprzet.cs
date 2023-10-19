@@ -33,5 +33,17 @@ namespace magazin
             Form uniforms_view = new Uniforms();
             uniforms_view.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form kable_view = new Kable();
+            kable_view.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form safety_tools_view = new Safety_Tools();
+            safety_tools_view.Show();
+        }
     }
 }

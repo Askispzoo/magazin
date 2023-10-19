@@ -33,6 +33,7 @@
             button3 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
+            button4 = new Button();
             SuspendLayout();
             // 
             // gridRecordNavigationControl1
@@ -101,12 +102,13 @@
             // 
             // button3
             // 
-            button3.Location = new Point(448, 12);
+            button3.Location = new Point(640, 12);
             button3.Name = "button3";
             button3.Size = new Size(407, 86);
             button3.TabIndex = 3;
             button3.Text = "Urządzenia bezpieczeństwa";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -126,11 +128,22 @@
             textBox1.Size = new Size(563, 47);
             textBox1.TabIndex = 4;
             // 
+            // button4
+            // 
+            button4.Location = new Point(434, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(188, 86);
+            button4.TabIndex = 5;
+            button4.Text = "Kable";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Sprzet
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
+            Controls.Add(button4);
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button3);
@@ -151,5 +164,6 @@
         private Button button3;
         private Button button2;
         private TextBox textBox1;
+        private Button button4;
     }
 }

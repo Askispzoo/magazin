@@ -37,6 +37,7 @@
             button4 = new Button();
             pictureBox1 = new PictureBox();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -111,11 +112,23 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // button6
+            // 
+            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
+            button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.Location = new Point(960, 383);
+            button6.Name = "button6";
+            button6.Size = new Size(922, 320);
+            button6.TabIndex = 6;
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Main_View
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2847, 1357);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(pictureBox1);
             Controls.Add(button4);
@@ -138,5 +151,6 @@
         private Button button4;
         private PictureBox pictureBox1;
         private Button button5;
+        private Button button6;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -39,6 +40,12 @@ namespace magazin
         {
             Form samochody_view = new Samochody();
             samochody_view.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form inventory_view = new Inventory();
+            inventory_view.Show();
         }
     }
 }
