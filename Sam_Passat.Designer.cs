@@ -159,7 +159,8 @@
             label11.Name = "label11";
             label11.Size = new Size(153, 41);
             label11.TabIndex = 11;
-            label11.Text = "CW 86421";
+            label11.Text = "CW 82145";
+            label11.Click += label11_Click;
             // 
             // label12
             // 

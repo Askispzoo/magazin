@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uniforms));
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            bannerTextProvider1 = new Syncfusion.Windows.Forms.BannerTextProvider(components);
+            bannerTextProvider2 = new Syncfusion.Windows.Forms.BannerTextProvider(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -101,6 +104,7 @@
             Name = "Uniforms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Odzież robocza";
+            Load += Uniforms_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -113,5 +117,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Syncfusion.Windows.Forms.BannerTextProvider bannerTextProvider1;
+        private Syncfusion.Windows.Forms.BannerTextProvider bannerTextProvider2;
     }
 }

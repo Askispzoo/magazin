@@ -16,5 +16,10 @@ namespace magazin
         {
             InitializeComponent();
         }
+
+        private void Uniforms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
