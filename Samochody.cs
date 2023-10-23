@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,15 @@ namespace magazin
         {
             InitializeComponent();
         }
+        //TO TEŻ DOKOŃCZYĆ
+        //public DbSet<Pracownik> Pracownik { get; set; }
 
+        /* TRZEBA DOKOŃCZYĆ
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=magazin_db_local;Trusted_Connection=True;");
+        }
+        */
         private void Samochody_Load(object sender, EventArgs e)
         {
 
