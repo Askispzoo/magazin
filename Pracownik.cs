@@ -13,17 +13,17 @@ namespace magazin
             get; set;
         }
 
-        public string Imie_Pracownika
+        public required string Imie_Pracownika
         {
             get; set;
         }
 
-        public string Nazwisko_Pracownika
+        public required string Nazwisko_Pracownika
         {
             get; set;
         }
 
-        public string Stanowisko_Pracownika
+        public required string Stanowisko_Pracownika
         {
             get; set;
         }
