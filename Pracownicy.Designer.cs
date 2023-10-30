@@ -140,7 +140,7 @@
             // 
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(503, 56);
+            button3.Location = new Point(493, 56);
             button3.Name = "button3";
             button3.Size = new Size(216, 70);
             button3.TabIndex = 4;
