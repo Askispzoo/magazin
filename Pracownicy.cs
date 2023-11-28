@@ -51,5 +51,10 @@ namespace magazin
         {
             throw new NotImplementedException();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Materials));
             button1 = new Button();
             SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Materials";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ASKI Magazyn - Materiały";

@@ -41,8 +41,11 @@
             button3 = new Button();
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
+            label5 = new Label();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -55,7 +58,7 @@
             groupBox1.Controls.Add(checkBox1);
             groupBox1.Location = new Point(1445, 160);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(431, 763);
+            groupBox1.Size = new Size(431, 584);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Właściwości";
@@ -117,7 +120,7 @@
             // 
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(12, 56);
+            button1.Location = new Point(15, 84);
             button1.Name = "button1";
             button1.Size = new Size(220, 70);
             button1.TabIndex = 2;
@@ -129,7 +132,7 @@
             // 
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(250, 56);
+            button2.Location = new Point(253, 84);
             button2.Name = "button2";
             button2.Size = new Size(210, 70);
             button2.TabIndex = 3;
@@ -140,7 +143,7 @@
             // 
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(479, 56);
+            button3.Location = new Point(482, 84);
             button3.Name = "button3";
             button3.Size = new Size(216, 70);
             button3.TabIndex = 4;
@@ -149,10 +152,10 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(845, 79);
+            textBox1.Location = new Point(704, 94);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Wyszukaj...";
-            textBox1.Size = new Size(563, 47);
+            textBox1.Size = new Size(704, 47);
             textBox1.TabIndex = 5;
             // 
             // dataGridView1
@@ -165,17 +168,41 @@
             dataGridView1.Size = new Size(1396, 820);
             dataGridView1.TabIndex = 6;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14.1F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(15, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(615, 62);
+            label5.TabIndex = 7;
+            label5.Text = "Zarządzanie pracownikami";
+            label5.Click += label5_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1445, 16);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(182, 138);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // Pracownicy
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1888, 992);
+            Controls.Add(pictureBox1);
+            Controls.Add(label5);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(groupBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Pracownicy";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pracownicy";
@@ -183,6 +210,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -200,5 +228,7 @@
         private Button button3;
         private TextBox textBox1;
         private DataGridView dataGridView1;
+        private Label label5;
+        private PictureBox pictureBox1;
     }
 }

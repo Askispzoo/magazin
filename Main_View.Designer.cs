@@ -135,6 +135,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             Name = "Main_View";
             StartPosition = FormStartPosition.CenterScreen;

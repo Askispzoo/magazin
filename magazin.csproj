@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>magazin.Program</StartupObject>
+    <ApplicationIcon>aski-logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -15,6 +17,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>TRACE;ISNETCORE</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="aski-logo.ico" />
+  </ItemGroup>
 
   <ItemGroup>
 
